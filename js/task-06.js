@@ -8,11 +8,11 @@ while (input !== null) {
     if (input === null) {
         break;
     }
-    if (Number.isNaN(parseInt(input))) {
+    if (Number.isNaN(parseFloat(input))) {
         alert(`Было введено не число, попробуйте еще раз`);
         input = 0;
     }
-    total += parseInt(input);
+    total += parseFloat(input);
 }
 
 alert(`Общая сумма чисел равна ${total}`);
